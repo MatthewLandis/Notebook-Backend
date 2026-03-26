@@ -1,0 +1,38 @@
+// Reference: https://www.totaltypescript.com/tsconfig-cheat-sheet#quickstart
+{
+  "compilerOptions": {
+    // Base options
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+
+    // Strictness
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    // Personal strictness additions
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Transpiling with typescript
+    "module": "NodeNext",
+    "outDir": "dist",
+
+    // Not running in the DOM
+    "lib": ["es2022"],
+
+    "typeRoots": ["src/types", "node_modules/@types"]
+  },
+  "include": ["src/**/*.ts", "src/server.ts"]
+}

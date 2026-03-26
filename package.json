@@ -1,0 +1,25 @@
+{
+  "name": "notebook-backend",
+  "main": "server.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "nodemon --exec tsx src/server.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "pg-promise": "^11.10.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "globals": "^15.12.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.6.3"
+  }
+}
