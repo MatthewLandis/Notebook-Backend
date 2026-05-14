@@ -6,7 +6,6 @@ export async function getNote(req: Request, res: Response<INote>, next: NextFunc
     try {
         const Note: INote = await service.getNote();
         res.status(200).json(Note);
-        console.log("Controller hit");
     } catch (error) { next(error); }
 };
 

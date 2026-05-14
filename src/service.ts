@@ -5,7 +5,6 @@ import { INote } from './model.js';
 export async function getNote() {
     const note = await db.one<INote>(
         `SELECT * FROM notes ORDER BY RANDOM() LIMIT 1;`);
-    console.log("Service hit");
     return note;
 };
 
