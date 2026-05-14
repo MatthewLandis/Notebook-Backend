@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc --build",
-    "start": "nodemon --exec tsx src/server.ts"
+    "start": "node ./dist/server.js",
+    "start:dev": "nodemon --exec tsx src/server.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
