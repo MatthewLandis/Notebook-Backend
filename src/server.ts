@@ -5,7 +5,7 @@ import { routes } from './route.js';
 
 const app = express();
 
-const clientHost = process.env['ENV']! === 'production' ? 'https://notebook-frontend-production-ed12.up.railway.app' : 'http://localhost:4200';
+const clientHost = process.env['CLIENT_HOST'] || 'http://localhost:4200';
 
 app.use(express.json());
 
